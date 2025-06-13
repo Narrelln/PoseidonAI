@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poseidon | Trade Monitor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0e1117;
+            color: #f1f1f1;
+        }
+
+        header {
+            background: #1c1f26;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #03dac5;
+        }
+
+        .monitor-container {
+            padding: 20px;
+        }
+
+        .trade-entry {
+            background: #1f222b;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #03dac5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .trade-info {
+            flex-grow: 1;
+        }
+
+        .trade-status {
+            font-weight: bold;
+        }
+
+        .status-positive {
+            color: #00e676;
+        }
+
+        .status-negative {
+            color: #ff1744;
+        }
+
+        .status-neutral {
+            color: #ffea00;
+        }
+    </style>
+</head>
+<body>
+    <header>Poseidon | Real-Time Trade Monitor</header>
+    <div class="monitor-container" id="tradeMonitor">
+        <!-- Trade entries will appear here -->
+    </div>
+
+    <script>
+        const tradeMonitor = document.getElementById("tradeMonitor");
+
+        function addTrade(symbol, action, pnl, status) {
+            const trade = document.createElement("div");
+            trade.className = "trade-entry";
+            trade.innerHTML = `
+                <div class="trade-info">
+                    <div><strong>Token:</strong> ${symbol}</div>
+                    <div><strong>Action:</strong> ${action}</div>
+                    <div><strong>PNL:</strong> ${pnl}%</div>
+                </div>
+                <div class="trade-status ${status === 'positive' ? 'status-positive' : status === 'negative' ? 'status-negative' : 'status-neutral'}">
+                    ${status === 'positive' ? 'Profit' : status === 'negative' ? 'Loss' : 'Open'}
+                </div>
+            `;
+            tradeMonitor.prepend(trade);
+        }
+
+        // Sample Data
+        addTrade("WHITEUSDT", "Long", 12.5, "positive");
+        addTrade("GORKUSDT", "Short", -5.2, "negative");
+        addTrade("BOTIFY", "Long", 0.0, "neutral");
+    </script>
+</body>
+</html>

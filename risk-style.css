@@ -1,0 +1,11 @@
+#risk-engine-panel {
+  background: #1a1e2a;
+  border: 1px solid #ff005566;
+  color: #fff;
+  padding: 16px;
+  margin-top: 20px;
+}
+#risk-output {
+  font-family: monospace;
+  color: #ffcc00;
+}

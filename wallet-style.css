@@ -1,0 +1,9 @@
+#wallet-feed-panel {
+  background: #0f141f;
+  color: #00f0ff;
+  font-family: monospace;
+  padding: 16px;
+  margin-top: 25px;
+  border: 1px solid #00f0ff33;
+  box-shadow: 0 0 12px #00f0ff22;
+}

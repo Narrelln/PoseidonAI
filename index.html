@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poseidon AI Dashboard</title>
+  <link rel="stylesheet" href="poseidon-ui.css" />
+</head>
+<body>
+  <h1 style="text-align:center; margin-bottom: 40px;">🚀 Poseidon AI Dashboard</h1>
+
+  <div class="panel" id="wallet-feed-panel">
+    <h3>👁️ Smart Wallet Feed</h3>
+    <div id="wallet-feed">Waiting for wallet activity...</div>
+  </div>
+
+  <div class="panel">
+    <h3>📊 Trade Timer & Momentum Tracker</h3>
+    <div id="momentum-output">Waiting...</div>
+  </div>
+
+  <div class="panel">
+    <h3>🎯 Execution Strategy Engine</h3>
+    <pre id="execution-result">Waiting...</pre>
+  </div>
+
+  <script src="walletTracker.js"></script>
+  <script src="autoEvaluator.js"></script>
+  <script src="momentum.js"></script>
+  <script src="execution-strategy.js"></script>
+</body>
+</html>

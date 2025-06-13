@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Orbitron, sans-serif;
+  background: #0a0e17;
+  color: #00f0ff;
+}
+.panel {
+  background: #141d2b;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00f5ff44;
+}

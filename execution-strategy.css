@@ -1,0 +1,11 @@
+#execution-strategy-panel {
+  background: #10161f;
+  padding: 16px;
+  color: #00ffee;
+  font-family: monospace;
+}
+#execution-strategy-panel button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+}

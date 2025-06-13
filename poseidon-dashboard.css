@@ -1,0 +1,83 @@
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0e0f12;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, .dashboard-header {
+    background: #1a1c23;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+}
+
+.dashboard-header h1 {
+    font-size: 3em;
+    color: #00ffff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px #00bcd4;
+}
+
+.subheading {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+nav ul li {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #d2b4ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #c77dff;
+}
+
+nav ul li.active {
+    color: #ff7ce5;
+    text-shadow: 0 0 10px #ff7ce5;
+}
+
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: linear-gradient(145deg, #1e2029, #2a2d39);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.2);
+    text-align: center;
+}
+
+.card h3 {
+    color: #00e5ff;
+    margin-bottom: 10px;
+}

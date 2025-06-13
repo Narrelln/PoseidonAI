@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poseidon AI Dashboard</title>
+    <link rel="stylesheet" href="poseidon-dashboard.css" />
+  </head>
+<body>
+  <header class="dashboard-header">
+    <h1>Poseidon AI</h1>
+    <p class="subheading">Smart Multi-Trade AI Bot for Meme & Futures</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Wallet Tracker</li>
+      <li>Sniper Watch</li>
+    </ul>
+  </nav>
+
+  <main class="dashboard-container">
+    <div class="dashboard-cards">
+      <div class="card">
+        <h2>Sniper Detection</h2>
+        <p>Active wallet scans: <strong>12</strong></p>
+      </div>
+      <div class="card">
+        <h2>Market Sentiment</h2>
+        <p>Current: <strong>Neutral</strong></p>
+      </div>
+      <div class="card">
+        <h2>Open Trades</h2>
+        <p>Positions running: <strong>4</strong></p>
+      </div>
+    </div>
+
+    <div class="card wallet-feed">
+      <h3>👁️ Smart Wallet Feed</h3>
+      <div id="wallet-feed">Waiting for wallet activity...</div>
+    </div>
+      <div class="card summary-card">
+        <h3>Bot Accuracy</h3>
+        <p>78.3%</p>
+      </div>
+      <div class="card summary-card">
+        <h3>Next Entry</h3>
+        <p>Analyzing entry for new memecoin launch</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="sidebar">
+    <ul>
+      <li class="active">Home</li>
+      <li>Analytics</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+<script src="wallets.js"></script> 
+<script src="walletTracker.js"></script>
+<script src="autoEvaluator.js"></script>
+</body>
+</html>
