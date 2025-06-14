@@ -1,14 +1,15 @@
+
 body {
-  margin: 0;
-  padding: 20px;
-  font-family: Orbitron, sans-serif;
-  background: #0a0e17;
-  color: #00f0ff;
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 40px;
 }
-.panel {
-  background: #141d2b;
-  padding: 20px;
-  margin-bottom: 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px #00f5ff44;
+.card {
+    border: 1px solid #0f0;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
 }

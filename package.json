@@ -1,16 +1,14 @@
 {
-  "name": "poseidonai_dasboard",
+  "name": "poseidon-bybit-proxy",
   "version": "1.0.0",
-  "main": "monitor.js",
+  "main": "tradeProxy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node tradeProxy.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "ws": "^8.18.2"
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2"
   }
 }

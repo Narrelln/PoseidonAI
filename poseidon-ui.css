@@ -1,23 +1,17 @@
 body {
-  background: #0f141f;
-  color: #00f0ff;
   font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0a0e17, #101b2d);
+  color: #00ffff;
   padding: 30px;
 }
-.panel {
-  background: #0a0e17;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #00f0ff33;
-  box-shadow: 0 0 12px #00f0ff55;
-  margin-bottom: 20px;
-}
-h3 {
-  margin-top: 0;
+h1 {
+  text-align: center;
+  color: #00ffff;
 }
 pre {
-  background: #08111b;
-  padding: 10px;
-  border-radius: 6px;
-  white-space: pre-wrap;
+  background-color: #111;
+  padding: 15px;
+  border-radius: 10px;
+  color: #0f0;
+  font-size: 14px;
 }
